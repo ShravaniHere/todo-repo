@@ -19,7 +19,7 @@ const TodoForm = (props) => {
 
     return(
         <form className="todo-form" onSubmit={handleSubmit}>
-            <input type='text' placeholder='Add task' value={input} name='text'className='todo-input'
+            <input type='text' placeholder='What To Do ?' value={input} name='text'className='todo-input'
             onChange={handleChange} />
             <button className="todo-button" > Add Task</button> 
         </form>
