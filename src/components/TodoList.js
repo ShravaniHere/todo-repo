@@ -10,7 +10,7 @@ const TodoList = () => {
             return;
         }
 
-        const newTodos = [todo, ...todos];  //make sure newly added todos are updated consistently
+        const newTodos = [todo, ...todos];  //make sure newly added todos are updated properly
         setTodos(newTodos);
     };
 
@@ -29,11 +29,20 @@ const TodoList = () => {
         setTodos(remainingTasks);
     }
 
+    // const updateTask = (todoId, newTodo) => {
+    //     if(!newTodo.text || /^\s*$/.test(newTodo.text)) {   //to remove multiple blank space
+    //         return;
+    //     }
+    //     setTodos(prev => prev.map(todo => (todo.id === todoId ? newTodo : todo)));
+    // }
+
     return(
-        <div>
-            <h1>Tasks for today : </h1>
-            <TodoForm onSubmit={addTodo} />
-            <Todo todos={todos} setTodoDone={setTodoDone} removeTask={removeTask} />
+        <div> 
+            <div className="header">
+                <h1>Tasks for today : </h1>                
+                <TodoForm onSubmit={addTodo} />
+            </div>
+            <Todo todos={todos} setTodoDone={setTodoDone} removeTask={removeTask}  />
         </div>
     )
 }
