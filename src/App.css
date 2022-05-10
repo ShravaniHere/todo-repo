@@ -12,7 +12,8 @@ h1 {
   background: #62a8fa;
   height: 30vh;
   text-align: center;
-  color: #fff
+  color: #fff;
+  border-radius: 20px;
 }
 
 .todo-app {
@@ -24,22 +25,30 @@ h1 {
   background: #a0dfff;
   margin: 120px auto;
   padding-bottom: 30px;
+  border-radius: 30px;
+  box-shadow: -9px 16px 20px rgb(0 0 0 / 20%);
 }
 
 .todo-input {
-  padding: 14px 30px 14px 30px;
-  outline: none;
-  width: 320px;
-  background: transparent;
+  padding: 1em;
+    outline: none;
+    width: 320px;
+    text-align: center;
+    height: 48px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #eee;
+    border: 1px solid;
+    background: transparent;
 }
 
 .todo-button {
   height: 48px;
-  margin-left: 5px;
-  width: 110px;
-  background-color: #32699b;
-  border: none;
-  color: #DBE9F5;
+    padding: 1.1rem;
+    width: 110px;
+    background-color: #32699b;
+    border: none;
+    color: #DBE9F5;
 }
 
 .todo-item {
@@ -51,15 +60,13 @@ h1 {
 }
 
 .icons {
-  flex: 1 1;
-  background: red;
+  flex: 1;
   text-align: center;
   padding: 9px;
 }
 
 .todo-text {
   flex: 1;
-  background-color: blueviolet;
   min-height: 2rem;
   text-align: center;
   padding: 10px;
